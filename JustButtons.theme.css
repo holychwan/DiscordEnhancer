@@ -1,0 +1,63 @@
+/**
+ * @name Discord Enhancer (Just buttons)
+ * @author holy
+ * @description Remove bloat buttons from Discord
+*/
+
+/* Bloat */
+/* Hide Nitro gift button */
+button[aria-label="Send a gift"] {
+    display: none;
+}
+
+/* Hide activity button */
+button[aria-label="Start An Activity"] {
+    display: none;
+}
+
+/* Hide sticker picker button */
+button[aria-label="Open sticker picker"] {
+    display: none;
+}
+
+/* Hide noise suppression button */
+button[aria-label="Noise Suppression powered by Krisp"] {
+    display: none;
+}
+
+/* Hide annoying sticker popup window that appears when you type */
+.channelTextArea-1FufC0 > .container-1ZA19X {
+    display: none;
+}
+
+/* Hide activity button (bottom right) */
+div[class^="channelAppLauncher_"] {
+    display: none;
+}
+
+/* Hide events and fix spacing */
+div[class^="containerDefault_"]:has(div[data-list-item-id^="channels___upcoming-events"]){
+    display:none;
+}
+div[class^="sectionDivider__629e4"]{
+    display:none;
+}
+div:nth-of-type(2)[style*="height: 12px"] {
+  display: none !important;
+}
+
+/* Hide discover */
+div[class*="footer_"]:has(> div > div[class*="listItemWrapper_"])
+{
+    display:none;
+}
+
+/* Hide nitro tab */
+ul.content__99f8c li a[href="/store"] {
+    display: none;
+}
+
+/* Hide shop tab */
+ul.content__99f8c li a[href="/shop"] {
+    display: none;
+}

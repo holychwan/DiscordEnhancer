@@ -5,13 +5,13 @@
 */
 
 /* New UI improvements */
-/* shrinks User Card to avoid overlapping with Server List */
+/* Shrinks User Card to avoid overlapping with the server list */
 section[aria-label="User area"] {
     left: var(--space-80) !important;
     width: calc(80% - var(--space-xs)*2) !important;
 }
 
-/* Extends the Server List to the bottom of the screen */
+/* Extends the server list to the bottom of the screen */
 nav[aria-label="Servers sidebar"] {
     margin-bottom: 0 !important;
 }

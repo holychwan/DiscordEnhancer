@@ -1,8 +1,20 @@
 /**
- * @name Discord Enhancer (Just buttons)
+ * @name Discord Enhancer (New UI)
  * @author holy
- * @description Remove bloat buttons from Discord
+ * @description Removes bloat buttons from Discord and fixes the UI (New Discord UI)
 */
+
+/* New UI improvements */
+/* shrinks User Card to avoid overlapping with Server List */
+section[aria-label="User area"] {
+    left: var(--space-80) !important;
+    width: calc(80% - var(--space-xs)*2) !important;
+}
+
+/* Extends the Server List to the bottom of the screen */
+nav[aria-label="Servers sidebar"] {
+    margin-bottom: 0 !important;
+}
 
 /* Bloat */
 /* Hide Nitro gift button */
@@ -30,8 +42,8 @@ button[aria-label="Noise Suppression powered by Krisp"] {
     display: none;
 }
 
-/* Hide activity button (bottom right) */
-div[class^="channelAppLauncher_"] {
+/* Hide activity button (chatbox) */
+button[aria-label="Apps"] {
     display: none;
 }
 
@@ -46,10 +58,9 @@ div:nth-of-type(2)[style*="height: 12px"] {
   display: none !important;
 }
 
-/* Hide discover */
-div[class*="footer_"]:has(> div > div[class*="listItemWrapper_"])
-{
-    display:none;
+/* Hide Discover button */
+div:has( > div > div > svg > foreignObject > div[aria-label="Discover"]) {
+    display: none !important;
 }
 
 /* Hide nitro tab */

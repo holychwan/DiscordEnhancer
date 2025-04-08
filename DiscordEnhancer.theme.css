@@ -1,11 +1,11 @@
 /**
  * @name Discord Enhancer
  * @author holy
- * @description Remove bloat buttons from Discord and fix the old UI
+ * @description Removes bloat buttons from Discord and fixes the old UI
 */
 
 /* Old UI fixes */
-/* fix overflow with long channel descriptions */
+/* Fix overflow with long channel descriptions */
 nav[class*="guilds"]+div[class*="base"] div[class*="sidebar"]+div {
     width: calc(100% - 240px)!important;
 }

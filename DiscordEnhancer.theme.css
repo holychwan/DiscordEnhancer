@@ -6,8 +6,8 @@
 
 /* Old UI fixes */
 /* Fix overflow with long channel descriptions */
-nav[class*="guilds"]+div[class*="base"] div[class*="sidebar"]+div {
-    width: calc(100% - 240px)!important;
+.children__9293f {
+    width:0px
 }
 
 /* Bloat */
